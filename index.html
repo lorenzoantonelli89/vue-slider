@@ -27,9 +27,11 @@
                 <h1>
                     {{text}}
                 </h1>
-                <div id="contentimg">
+                <div id="contentimg" @mouseover="stopSlide" @mouseleave="startSlide">
                     <i @click="changeImgSX" class="fas fa-arrow-left"></i>
-                    <img :src="image" alt="">
+                    <div v-for="elem in [index]">
+                        <img  :src="currentImg" alt="">
+                    </div>
                     <i @click="changeImgDX" class="fas fa-arrow-right"></i>
                 </div>
             </div>
