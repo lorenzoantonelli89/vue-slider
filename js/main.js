@@ -4,9 +4,16 @@ function initVue() {
         el: '#app',
         data: {
             'text': 'Slider VueJS!!',
-            'image': 'img/boat.jpg'
+            'image': 'img/boat.jpg',
+            'timer': null
+        },
+        mounted: function () {
+            this.startSlide();
         },
         methods: {
+            startSlide: function() {
+                this.timer = setInterval(this.changeImgDX, 3000)
+            },
             changeImgDX: function () {
                 if (this.image == 'img/boat.jpg') {
                     this.image = 'img/boat2.JPG'
