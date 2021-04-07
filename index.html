@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <title>Esercizi VueJS</title>
+    <!-- link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- link vueJs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- link my js -->
+    <script src="js/main.js"></script>
+    <!-- link my css -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    {{text}}
+                </h1>
+                <div id="contentimg">
+                    <i @click="changeImgSX" class="fas fa-arrow-left"></i>
+                    <img :src="image" alt="">
+                    <i @click="changeImgDX" class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+
+</html>

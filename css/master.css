@@ -1,0 +1,45 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+
+.container{
+ height: 100vh;
+ display: flex;
+ background-color: lightblue;
+}
+
+.row{
+ margin: auto;
+ text-align: center;
+}
+
+img{
+    width: 600px;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+#contentimg{
+  position: relative;
+}
+
+i{
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.fa-arrow-left{
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-arrow-right{
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(-50%, -50%);
+}
